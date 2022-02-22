@@ -7,7 +7,8 @@ function displayUser(data) {
     const ul = document.getElementById(`users`);
     for (const users of data) {
         const li = document.createElement(`li`);
-        li.innerText = users.name;
+        li.innerText = `name: ${users.name} 
+        email: ${users.email}`;
         ul.appendChild(li);
     }
 
